@@ -11,5 +11,3 @@ export interface Ticket {
   stops: number;
   price: number;
 }
-
-export type Tickets = Ticket[];
