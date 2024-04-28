@@ -1,8 +1,13 @@
-// .ticketsList
-//     width: 100%
+$blue: #2196F3
+$hover-background: #f1fcff
+$blue-hover: #4a9bde
+$shadow-light: #00000033
+$shadow-dark: rgba(0, 0, 0, 0.1)
+$base-padding: 1.25rem
+$element-height: 3rem
 
 .ticket
-    margin-bottom: 20px
+    margin-bottom: $base-padding
     display: flex
     width: 700px
     height: 180px
@@ -16,7 +21,7 @@
     padding: 30px 0
     justify-content: space-between
     align-items: center
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2)
+    box-shadow: 0px 2px 1px 0px $shadow-light
 
 .priceAndCarrier span
     font-size: 1.75rem
@@ -30,21 +35,22 @@
     border-radius: 5px
     width: 80%
     height: 50px
-    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2)
+    box-shadow: 0px 2px 3px 0px $shadow-light
     &:hover
         background: #FF8124
     &:active
-        box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1)
+        box-shadow: inset 0px 2px 3px 0px $shadow-dark
 
 .priceAndCarrier strong
     font-size: 1.2rem
+    font-weight: 500
 
 .flightInfo
     background: white
     border-radius: 10px
     width: 65%
     padding: 30px 40px
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2)
+    box-shadow: 0px 2px 1px 0px $shadow-light
     display: flex
     flex-direction: column
 
@@ -82,3 +88,19 @@
 
 .date
     color: #909090
+
+@media only screen and (max-width: 1000px)
+    .ticket
+        width: 100%
+
+@media only screen and (max-width: 700px)
+    .ticket
+        flex-direction: column
+        margin-bottom: 150px
+    .priceAndCarrier
+        width: 100%
+        margin-bottom: 1px
+    .priceAndCarrier span
+        margin-bottom: 1rem
+    .flightInfo
+        width: 100%
