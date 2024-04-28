@@ -1,0 +1,109 @@
+.ticketsFilter
+    background: white
+    border-radius: 10px
+    width: 300px
+    display: flex
+    flex-direction: column
+    padding: 20px 0
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2)
+
+.ticketsFilter h2
+    font-size: 1.2rem
+    margin-bottom: 10px
+    padding: 0 20px
+
+//
+// Радиокнопки
+//
+
+.currency
+    padding: 0 20px
+
+.radioContainer
+    border: 2px solid #2196F3
+    border-radius: 6px
+    height: 3rem
+    display: flex
+    justify-content: center
+
+.radioLabel
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
+    font-weight: 600
+    color: #2196F3
+    padding: 10px
+    &:hover
+        background: #f1fcff
+
+.radioLabel:nth-child(2)
+    &:hover
+        border-top-left-radius: 4px
+        border-bottom-left-radius: 4px
+
+.radioLabel:nth-child(4)
+    border-right: 2px solid #2196F3
+    border-left: 2px solid #2196F3
+
+.radioLabel:last-child
+    &:hover
+        border-top-right-radius: 4px
+        border-bottom-right-radius: 4px
+
+.radio
+    position: absolute
+    z-index: -1
+    opacity: 0
+
+.radio:checked + .radioLabel
+    background: #2196F3
+    color: white
+
+//
+// Пересадки
+//
+
+.stops
+    display: flex
+    flex-direction: column
+    margin-top: 20px
+
+.checkboxContainer
+    padding: 0 20px
+    height: 2rem
+    display: flex
+    align-items: center
+    &:hover
+        background: #F1FCFF
+
+.checkbox
+    position: absolute
+    z-index: -1
+    opacity: 0
+
+.customCheckbox
+    width: 20px
+    height: 20px
+    border: 2px solid #2196F3
+    background: white
+    border-radius: 4px
+    position: absolute
+    margin-left: -30px
+
+.checkboxLabel
+    position: relative
+    left: 30px
+
+.checkbox:checked + .customCheckbox::before
+    content: ""
+    display: inline-block
+    width: 1rem
+    height: 1rem
+    flex-shrink: 0
+    flex-grow: 0
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 60% 60%
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%232196F3' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e")
