@@ -1,6 +1,7 @@
 import tickets from '@/lib/tickets.json';
 import { Ticket } from '@/lib/tickets';
 import style from './TicketsList.module.sass';
+import Image from 'next/image';
 
 interface TicketsListProps {
   filter: {
@@ -53,7 +54,7 @@ export default function TicketsList({ filter }: TicketsListProps) {
                   <span className={style.stops}>
                     Пересадок: <strong>{ticket.stops}</strong>
                   </span>
-                  <img
+                  <Image
                     src="/line-plane.svg"
                     alt="Plane icon"
                     width="130"
