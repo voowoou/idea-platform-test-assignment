@@ -54,13 +54,7 @@ export default function TicketsList({ filter }: TicketsListProps) {
                   <span className={style.stops}>
                     Пересадок: <strong>{ticket.stops}</strong>
                   </span>
-                  <Image
-                    src="/idea-platform-test-assignment/plane.svg"
-                    alt="Plane icon"
-                    width="130"
-                    height="30"
-                    priority
-                  />
+                  <div className={style.planeIcon}></div>
                 </div>
                 <span className={style.time}>{ticket.arrival_time}</span>
               </div>
