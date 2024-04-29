@@ -55,7 +55,7 @@ export default function TicketsList({ filter }: TicketsListProps) {
                     Пересадок: <strong>{ticket.stops}</strong>
                   </span>
                   <Image
-                    src="../line-plane.svg"
+                    src="../plane.svg"
                     alt="Plane icon"
                     width="130"
                     height="30"
