@@ -60,6 +60,7 @@ export default function TicketsList({ filter }: TicketsListProps) {
                     width="130"
                     height="30"
                     className={style.planeIcon}
+                    priority
                   />
                 </div>
                 <span className={style.time}>{ticket.arrival_time}</span>

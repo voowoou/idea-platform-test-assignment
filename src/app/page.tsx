@@ -14,7 +14,6 @@ export default function Home() {
   const handleFilterChange = (newFilter: Filter): void => {
     setFilter(newFilter);
   };
-  console.log('Filter currency: ' + filter.currency + '   Filter stops: ' + filter.stops);
 
   return (
     <main>
