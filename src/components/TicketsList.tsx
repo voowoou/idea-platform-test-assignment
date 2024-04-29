@@ -55,11 +55,10 @@ export default function TicketsList({ filter }: TicketsListProps) {
                     Пересадок: <strong>{ticket.stops}</strong>
                   </span>
                   <Image
-                    src="../plane.svg"
+                    src="./idea-platform-test-assignment/public/plane.svg"
                     alt="Plane icon"
                     width="130"
                     height="30"
-                    className={style.planeIcon}
                     priority
                   />
                 </div>
